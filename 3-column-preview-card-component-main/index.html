@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <style>
+      body,
+      button {
+        font-family: "Lexand Deca", sans-serif;
+      }
+
+      h3 {
+        font-family: "Big Shoulders Display", sans-serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: hsla(0, 0%, 100%, 0.75);
+      }
+      p {
+        font-size: 15px;
+        color: hsl(0, 0%, 95%);
+        margin-bottom: 20px;
+        text-align: left;
+        margin-right: 20px;
+        line-height: 1.6;
+      }
+      .container {
+        padding: 20px;
+      }
+      .card1 {
+        padding: 30px;
+        background: hsl(31, 77%, 52%);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .card2 {
+        padding: 30px;
+        background: hsl(184, 100%, 22%);
+      }
+      .card3 {
+        padding: 30px;
+        background: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      img {
+        margin-bottom: 2px;
+      }
+      .btn1 {
+        background-color: #fff;
+        color: hsl(31, 77%, 52%);
+        border-radius: 30px;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      .btn2 {
+        background-color: #fff;
+        color: hsl(184, 100%, 22%);
+        border-radius: 30px;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      .btn3 {
+        background-color: #fff;
+        color: hsl(179, 100%, 13%);
+        border-radius: 30px;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media (min-width: 1024px) {
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+        }
+
+        .card1 {
+          border-radius: 10px 0px 0px 10px;
+        }
+
+        .card2 {
+          border-radius: 0px;
+        }
+        .card3 {
+          border-radius: 0px 10px 10px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card1">
+        <img src="images/icon-sedans.svg" alt="" />
+        <h3>Sedans</h3>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="btn1">Learn More</button>
+      </div>
+      <div class="card2">
+        <img src="images/icon-suvs.svg" alt="" />
+        <h3>SUVs</h3>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="btn2">Learn More</button>
+      </div>
+      <div class="card3">
+        <img src="images/icon-luxury.svg" alt="" />
+        <h3>Luxury</h3>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="btn3">Learn More</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
